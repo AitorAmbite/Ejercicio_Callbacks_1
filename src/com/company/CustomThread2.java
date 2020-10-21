@@ -11,11 +11,11 @@ public class CustomThread2 extends Thread{
 
     @Override
     public void run() {
-        Date date = new Date();
-        long timeMilli = date.getTime();
-        Timestamp inicio = new Timestamp(timeMilli);
+        long timeMilli = 0;
+        Timestamp inicio = new Timestamp(new Date().getTime());
+
         int veces = 0;
-        for(int i=0;i<Main.times;i++){
+        for(int i=0;i<Main.getTimes();i++){
             try {
                 sleep(2000);
                 veces++;
@@ -24,8 +24,9 @@ public class CustomThread2 extends Thread{
                 e.printStackTrace();
             }
         }
-        timeMilli = date.getTime();
-        Timestamp finalT = new Timestamp(timeMilli);
-        callback.decirNumVeces("Se ha ejecutado "+veces +" veces Y ha tardado " +(finalT.getTime()-inicio.getTime()));
+        Timestamp finalT = new Timestamp(new Date().getTime());
+        timeMilli = finalT.getTime() - inicio.getTime();
+
+        callback.decirNumVeces("Se ha ejecutado "+veces +" veces Y ha tardado "+timeMilli );
     }
 }

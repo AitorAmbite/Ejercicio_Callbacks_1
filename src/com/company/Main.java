@@ -10,4 +10,12 @@ public class Main{
         ClasePrincipal nueva = new ClasePrincipal();
 
     }
+
+    public static void setTimes(int times) {
+        Main.times = times;
+    }
+
+    public static int getTimes() {
+        return times;
+    }
 }
