@@ -1,5 +1,5 @@
 # Ejercicio_Callbacks_1
-Ejercicio propuesto centrado en callbacks
+_Ejercicio propuesto centrado en callbacks_
 # Enunciado
 Realiza un programa en Java que contenga una clase principal desde la que llamarán a dos hilos:
 
