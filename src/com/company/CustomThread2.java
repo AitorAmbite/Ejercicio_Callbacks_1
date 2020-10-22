@@ -19,7 +19,7 @@ public class CustomThread2 extends Thread{
             try {
                 sleep(2000);
                 veces++;
-                System.out.println("Ejecutado "+veces);
+                //System.out.println("Ejecutado "+veces);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
