@@ -15,7 +15,7 @@ public class CustomThread2 extends Thread{
         Timestamp inicio = new Timestamp(new Date().getTime());
 
         int veces = 0;
-        for(int i=0;i<Main.getTimes();i++){
+        for(int i=0;i<Main.times;i++){
             try {
                 sleep(2000);
                 veces++;

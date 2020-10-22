@@ -11,11 +11,4 @@ public class Main{
 
     }
 
-    public static void setTimes(int times) {
-        Main.times = times;
-    }
-
-    public static int getTimes() {
-        return times;
-    }
 }
